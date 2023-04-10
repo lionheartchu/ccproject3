@@ -1,0 +1,133 @@
+
+@keyframes titleshow{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+@keyframes imgshow{
+    0% {
+        opacity:0;
+    }
+    35%{
+        opacity:0;
+    }
+    100%{
+        opacity:100%;
+    }
+}
+@keyframes colorchange{
+    0% {
+        color:black;
+    }
+    100%{
+        color:white;
+    }
+}
+@keyframes colorchange2{
+    0% {
+        color:white;
+    }
+    100%{
+        color:black;
+    }
+}
+@keyframes shadowshow {
+    0%{
+        box-shadow:0vw 0vw black;
+    }
+    30%{
+        box-shadow:0vw 0vw black;
+    }
+    100%{
+        box-shadow: 1.2vw -2vw rgba(80,80,80,0.6);
+    }
+}
+@keyframes bordershow {
+    0%{
+        border:0vw black;
+    }
+    45%{
+        border:0vw black;
+    }
+    100%{
+        border: 0.25vw solid darkred;
+    }
+}
+body{
+    /* cursor:url('../project3/images/star.png'),auto; */
+    margin:3%;
+    font-family: 'Marcellus',sans-serif;
+    font-size: 1.4vw;
+    color: white;
+    /* border-width:0.3vw;
+    border-style: solid; */
+    background-color:black;
+}
+main{
+    background-image: url(./images/bg.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height:200%;
+  background-attachment: fixed;
+  display: block;
+  padding:2.5%;
+}
+a:link{
+    color:grey;
+}
+a:visited{
+    color:lightsteelblue;
+}
+h1{
+    font-size: 3.5vw;
+    animation-name: titleshow;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-left:2%;
+}
+.intro{
+    width:22%;
+    margin-top: 11%;
+    animation:colorchange 17s;
+
+}
+.img1{
+    width:18%;
+    height:18%;
+    margin-top:12%;
+    margin-left:.5%;
+    animation:imgshow 10s;
+}
+.img1:hover{
+    width:15%;
+    height:15%;
+    box-shadow: -2vw 3vw .8vw rgb(50,50,50);
+}
+.wrapper1{
+    display: flex;
+    gap:2%;
+}
+.t1{
+    font-size:1.4vw;
+    width:46%;
+    margin-left: 43vw;
+    margin-top: -24vw;
+    padding:1.7vw;
+    border: 0.25vw solid darkred;
+    box-shadow: 1.2vw -2vw rgba(80,80,80,0.6);
+    animation:colorchange 17s,shadowshow 9s, bordershow 8s;
+}
+.t1:hover{
+    background:rgba(139,0,0,.4);
+    animation: colorchange2 3s infinite alternate;
+
+}
+.p1:hover{
+    font-size:1.7vw;
+    color:red;
+}
+a{
+    animation:titleshow 17s;
+}
